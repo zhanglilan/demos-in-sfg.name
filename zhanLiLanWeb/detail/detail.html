@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/media.css" />
+		<title></title>
+	</head>
+	<body class="">
+		<nav class="bg-white df pcNav">
+			<div class="w1280 df jsb padding-t-5">
+				<div class="df">
+				<a href="../index.html"><img class="logo" src="img/logo.png"></a> 
+				<ul class="df">
+					<li><a href="../index.html">首 页</a></li>
+					<li class="active"><a href="">个人作品集</a></li>
+					<li><a href="resume.html" target="_blank">个人介绍</a></li>
+				</ul>
+				</div>
+				<p>联系电话：18501709178</p>
+			</div>
+		</nav>
+		<nav class="bg-white df mobileNav">
+			<div class="w1280 df jsb padding-t-5">
+				<div class="df ">
+				<img class="logo" src="img/logo.png">
+				<ul class="df">
+					<li><a href="../index.html">首 页</a></li>
+					<li class="active"><a href="">作品</a></li>
+					<li><a href="">介绍</a></li>
+				</ul>
+				</div>
+				<p>电话：18501709178</p>
+			</div>
+		</nav>
+		<div class="bg-white w1280">
+			<img src="img/img1.png">
+			<img src="img/img2.png">
+			<img src="img/img3.png">
+			<img src="img/img4.png">
+			<img src="img/img5.png">
+			<img src="img/img6.png">
+		</div>
+		
+		
+		<div id="scrollUp" class="scrollup">
+		    <a class="arrows" title="返回顶部" href="javascript:;"></a>
+		    <a class="service feedback" title="微信" target="_blank" href=""></a>
+		    <!--<a class="feedback" title="反馈" href="javascript:;">反馈</a>-->
+        </div>
+        
+        <div class="scrollUp">
+    		<ul>
+    			<li>
+    				<a id="backtop" class="off">
+    					<img src="img/icon1.svg">
+    				</a>
+    			</li>
+    			<li>
+    				<a>
+    					<img src="img/icon3.svg">
+    					<div class="sideBarCont rPhone"><img src="img/rightPhone.png"></div>
+    				</a>
+    			</li>
+    			<li>
+    				<a>
+    					<img src="img/icon2.svg">
+    					<div class="sideBarCont rqcode"><img src="img/detailRightQRCode.png"></div>
+    				</a>
+    			</li>
+    		</ul>
+    </div>
+     <script src="../js/jquery-1.11.0.min.js"></script>   
+     <script>
+     $(function(){
+     	
+       $("#backtop").click(function () {
+			        var speed=500;//滑动的速度
+			        $('body,html').animate({ scrollTop: 0 }, speed);
+			        return false;
+		});
+		
+		$(window).scroll(function() {
+            var s = $(window).scrollTop();
+            if(s<300){
+                 $("#backtop").addClass("off");
+            }else{
+                 $("#backtop").removeClass("off");
+            }
+        });
+		
+     });
+   </script>
+	</body>
+</html>

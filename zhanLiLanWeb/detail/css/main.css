@@ -1,0 +1,189 @@
+/**,html,body,ul,li,p {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+	font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #34495e;   
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga","kern";
+	cursor: default;
+	background-color: #eff3f5;
+	color: #34495e;
+	
+}*/
+
+.w1280{
+	width: 1278px;
+	margin: auto;
+	padding: 50px 0;
+    text-align: center;
+}
+.bg-white.w1280 img{
+	width: 900px;
+}
+nav{
+	height: 70px;
+	margin-bottom: 20px;
+}
+img{
+		width: 100%;
+	}
+.logo{
+	border-radius:100%;
+	margin-right: 20px;
+	width: inherit;
+	box-shadow: 0 0 2px 2px #67737b2e;
+	-webkit-animation:logoImg 15s infinite linear;
+}
+.scrollUp>ul>li>a.off{
+	display: none;
+}
+@-webkit-keyframes logoImg {
+	0%{
+		-webkit-transform: rotate(0deg);
+	}
+	100%{
+		-webkit-transform: rotate(360deg);
+	}
+}
+nav ul li a{
+	/*color: #34495e;*/
+	margin: 0 20px;
+}
+nav ul li.active a,nav ul li a:hover{
+	color: #ada074;
+}
+.pcNav{
+	display: block;
+}
+.mobileNav{
+		display: none;
+	}
+	.padding-t-5{
+		padding-top: 5px;
+	}
+	
+	
+.scrollup{ position: fixed; bottom:90px; right: 50px; z-index:10; display: block; width: 48px; }
+.scrollup .guanfang{
+    width: 48px;
+    height: 140px;
+    float: left;
+    background: url("../../img/kefu.png") no-repeat center top;
+    background-size: 48px 112px;
+    margin-bottom: -35px;
+    z-index: -1;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    padding-top: 14px;
+    box-sizing: border-box;
+}
+.scrollup .guanfang:hover{
+    background: url("../../img/kefu2.png") no-repeat center top;
+    background-size: 48px 112px;
+    z-index: -1;
+    color: #3498db;
+}
+.scrollUp{
+	position: fixed;
+    right: 20px;
+    bottom: 10%;
+    z-index: 2;
+}
+.scrollUp>ul>li>a{
+	display: block;
+    margin-bottom: 5px;
+    width: 40px;
+    height: 36px;
+    border-radius: 2px;
+    background-color: #444;
+    background-color: rgba(0,0,0,.6);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    position: relative;
+}
+.scrollUp>ul>li>a .sideBarCont{
+	display: none;
+	position: absolute;
+    right: 40px;
+    width: 140px;
+    top: -60px;
+}
+.scrollUp>ul>li>a .sideBarCont img{
+	width: 100%;
+}
+.scrollUp>ul>li>a:hover .sideBarCont{
+	display: block;
+}
+.scrollUp>ul>li>a .rPhone{
+	position: absolute;
+    right: 50px;
+    width: 179px;
+    top: -8px;
+}
+.scrollUp>ul>li>a img{
+	width: 20px;
+    margin: auto;
+    display: block;
+    padding: 7px;
+}
+.scrollUp>ul>li>a:hover{
+	    background-color: rgba(0,0,0,.7);
+}
+
+.send {
+position:relative;
+width:150px;
+height:35px;
+background:#F8C301;
+border-radius:5px; /* 圆角 */
+margin:30px auto 0;
+}
+
+.send .arrow {
+position:absolute;
+top:5px;
+right:-16px; /* 圆角的位置需要细心调试哦 */
+width:0;
+height:0;
+font-size:0;
+border:solid 8px;
+border-color:#4D4948 #4D4948 #4D4948 #F8C301;
+}
+
+@media only screen and (max-width: 1280px){
+	nav{
+		padding: 0 10px;
+	}
+	img{
+		width: 100%;
+	}
+	.mobileNav{
+		display: block;
+	}
+	.pcNav{
+		display: none;
+	}
+	.logo{
+		width:initial!important;
+		margin-right: 10px;
+	}
+	.w1280{
+		width: 100%;
+	}
+	nav ul li a {
+	    margin: 0 10px;
+	}
+	
+}
+
